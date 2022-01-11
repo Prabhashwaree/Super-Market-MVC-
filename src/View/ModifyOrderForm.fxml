@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="updatePane" prefHeight="257.0" prefWidth="573.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ModifyOrderFormController">
+   <children>
+      <ImageView fitHeight="269.0" fitWidth="302.0" layoutX="1.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/156-1567989_abstract-geometric-shapes-effects-effect-designs-background-geometric.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtOrderId" alignment="CENTER" layoutX="23.0" layoutY="23.0" onAction="#orderIdOnAction" prefHeight="19.0" prefWidth="104.0" promptText="O-000" style="-fx-background-color: #ffffff;" stylesheets="@../CSS/StyleSheet.css">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button layoutX="54.0" layoutY="187.0" mnemonicParsing="false" onAction="#updateOrderOnAction" prefHeight="30.0" prefWidth="162.0" style="-fx-background-color: linear-gradient(to right top, #142664, #1b2464, #202264, #262064, #2b1e63, #2b1c61, #2c195f, #2c175d, #271459, #221255, #1d0f52, #180d4e);" styleClass="left-side-background" stylesheets="@../CSS/StyleSheet.css" text="Update Order" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <JFXTextField fx:id="txtCode2" focusColor="#1100ab" labelFloat="true" layoutX="354.0" layoutY="37.0" onAction="#moveToDiscription" prefHeight="30.0" prefWidth="162.0" promptText="Item Code" unFocusColor="BLACK">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPrize1" focusColor="#1100ab" labelFloat="true" layoutX="354.0" layoutY="81.0" onAction="#moveToQTY" prefHeight="30.0" prefWidth="162.0" promptText="Unit Prize" unFocusColor="BLACK">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtQTY2" focusColor="#1100ab" labelFloat="true" layoutX="354.0" layoutY="130.0" prefHeight="30.0" prefWidth="162.0" promptText="QTY On Hand" unFocusColor="BLACK">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDiscount" focusColor="#1100ab" labelFloat="true" layoutX="354.0" layoutY="178.0" prefHeight="30.0" prefWidth="162.0" promptText="Discount" unFocusColor="BLACK">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Pane layoutY="-2.0" prefHeight="3.0" prefWidth="573.0" style="-fx-background-color: #000000;" styleClass="left-side-background" stylesheets="@../CSS/StyleSheet.css" />
+   </children>
+</AnchorPane>

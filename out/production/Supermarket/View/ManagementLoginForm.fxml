@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="managementLogPane" prefHeight="211.0" prefWidth="594.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ManagementLoginFormController">
+   <children>
+      <ImageView blendMode="MULTIPLY" cache="true" cacheHint="SCALE_AND_ROTATE" fitHeight="216.0" fitWidth="247.0" layoutY="1.0" opacity="0.73" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/156-1567989_abstract-geometric-shapes-effects-effect-designs-background-geometric.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="butLogin" layoutX="25.0" layoutY="153.0" mnemonicParsing="false" onAction="#loginAccountOnAction" prefHeight="31.0" prefWidth="165.0" style="-fx-background-color: linear-gradient(to right top, #ff2ca4, #ff348a, #ff4572, #ff585d, #ff6a4b, #ff6b47, #ff6c43, #ff6d3f, #ff5b49, #ff4854, #ff3260, #ff116e);" stylesheets="@../CSS/StyleSheet.css" text="Admin Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <styleClass>
+            <String fx:value="right-side-background" />
+            <String fx:value="left-side-background" />
+         </styleClass>
+      </Button>
+      <TextField fx:id="txtUserName" layoutX="272.0" layoutY="68.0" onAction="#moveToPassword" onKeyReleased="#LoginKeyReleasedOnAction" prefHeight="31.0" prefWidth="287.0" promptText="Admin User Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="24.0" fitWidth="21.0" layoutX="532.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/name_50px.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="txtPassword" layoutX="272.0" layoutY="118.0" onKeyReleased="#LoginKeyReleasedOnAction" prefHeight="31.0" prefWidth="287.0" promptText="Admin Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <ImageView fitHeight="31.0" fitWidth="21.0" layoutX="532.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/key_2_30px.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="522.0" layoutY="68.0" orientation="VERTICAL" prefHeight="31.0" prefWidth="0.0" />
+      <Separator layoutX="522.0" layoutY="118.0" orientation="VERTICAL" prefHeight="31.0" prefWidth="0.0" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="31.0" prefWidth="176.0" text="Loging to system" textFill="#0a35ab">
+         <font>
+            <Font name="Bell MT" size="21.0" />
+         </font>
+      </Label>
+      <Pane layoutY="-2.0" opacity="0.68" prefHeight="3.0" prefWidth="594.0" style="-fx-background-color: #000000;" />
+   </children>
+</AnchorPane>

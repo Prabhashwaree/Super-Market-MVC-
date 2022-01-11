@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="CreateAccount" prefHeight="716.0" prefWidth="1129.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CreateAccountFormController">
+   <children>
+      <TextField fx:id="txtFirstName" layoutX="563.0" layoutY="280.0" onAction="#moveToLastName" prefHeight="35.0" prefWidth="361.0" promptText="First Name">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Pane prefHeight="55.0" prefWidth="1142.0" style="-fx-background-color: #281D5E;" styleClass="left-side-background" stylesheets="@../CSS/StyleSheet.css" />
+      <TextField fx:id="txtLastName" layoutX="563.0" layoutY="342.0" onAction="#moveToEmail" prefHeight="35.0" prefWidth="361.0" promptText="Last Name">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Pane layoutX="-24.0" layoutY="54.0" prefHeight="661.0" prefWidth="418.0" style="-fx-background-color: #281D5E;" stylesheets="@../CSS/StyleSheet.css">
+         <styleClass>
+            <String fx:value="anchorpane" />
+            <String fx:value="right-side-background" />
+            <String fx:value="left-side-background" />
+         </styleClass>
+         <children>
+            <ImageView fitHeight="203.0" fitWidth="267.0" layoutX="-4.0" layoutY="-60.0" opacity="0.16" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/slider7-bubble2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="208.0" fitWidth="171.0" layoutX="176.0" layoutY="416.0" opacity="0.77" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/slider7-bubble2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="147.0" fitWidth="176.0" layoutX="57.0" layoutY="440.0" pickOnBounds="true" preserveRatio="true" rotate="175.9">
+               <image>
+                  <Image url="@../asset/slider7-bubble4.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="184.0" fitWidth="300.0" layoutX="21.0" layoutY="470.0" opacity="0.21" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/slider7-bubble4.png" />
+               </image>
+            </ImageView>
+            <ImageView blendMode="MULTIPLY" fitHeight="278.0" fitWidth="507.0" layoutX="20.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../asset/slider8-bubble2.jpg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="98.0" fitWidth="105.0" layoutX="19.0" layoutY="28.0" opacity="0.93" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/slider7-bubble2.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="43.0" layoutY="245.0" mnemonicParsing="false" onAction="#BackToLogin" prefHeight="41.0" prefWidth="224.0" style="-fx-background-color: linear-gradient(to right top, #ff8378, #ff7f78, #ff7b78, #ff7778, #ff7378, #ff6f7b, #ff6b7f, #ff6783, #ff638c, #ff6096, #ff5ea1, #ff5dac);;" stylesheets="@../CSS/StyleSheet.css" text="     Back To Entrance" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <styleClass>
+                  <String fx:value="transparent" />
+                  <String fx:value="anchorpane" />
+                  <String fx:value="border" />
+               </styleClass>
+            </Button>
+            <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="62.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/back_to_24px.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="43.0" layoutY="174.0" onAction="#loginBtnOnAction" prefHeight="47.0" prefWidth="355.0" style="-fx-background-color: linear-gradient(to right top, #142664, #1b2464, #202264, #262064, #2b1e63, #2b1c61, #2c195f, #2c175d, #271459, #221255, #1d0f52, #180d4e);" stylesheets="@../CSS/StyleSheet.css" text="Login Account" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="right-side-background" />
+                  <String fx:value="anchorpane" />
+                  <String fx:value="left-side-background" />
+               </styleClass>
+            </JFXButton>
+            <ImageView fitHeight="227.0" fitWidth="267.0" layoutX="29.0" layoutY="380.0" opacity="0.93" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/slider7-bubble2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TextField fx:id="txtEmail" layoutX="563.0" layoutY="404.0" onAction="#moveToPassword" prefHeight="35.0" prefWidth="361.0" promptText="Email">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="411.0" layoutY="78.0" prefHeight="47.0" prefWidth="371.0" text="Create Account Form">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="652.0" layoutY="108.0" prefHeight="0.0" prefWidth="443.0" />
+      <ImageView fitHeight="24.0" fitWidth="31.0" layoutX="893.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/name_26px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="893.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/send_email_50px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="24.0" layoutX="893.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/name_50px.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="txtPassword" layoutX="562.0" layoutY="467.0" onAction="#moveToComfirm" prefHeight="35.0" prefWidth="361.0" promptText="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="txtComfirm" layoutX="564.0" layoutY="531.0" prefHeight="35.0" prefWidth="361.0" promptText="Comfirm Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="893.0" layoutY="537.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/password_reset_24px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="893.0" layoutY="473.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/key_2_30px.png" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="MULTIPLY" fitHeight="229.0" fitWidth="395.0" layoutX="747.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/slider8-bubble2.jpg.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="885.0" layoutY="280.0" orientation="VERTICAL" prefHeight="35.0" prefWidth="2.0" />
+      <Separator layoutX="885.0" layoutY="532.0" orientation="VERTICAL" prefHeight="35.0" prefWidth="2.0" />
+      <Separator layoutX="885.0" layoutY="468.0" orientation="VERTICAL" prefHeight="35.0" prefWidth="2.0" />
+      <Separator layoutX="885.0" layoutY="405.0" orientation="VERTICAL" prefHeight="35.0" prefWidth="2.0" />
+      <Separator layoutX="885.0" layoutY="343.0" orientation="VERTICAL" prefHeight="35.0" prefWidth="2.0" />
+      <Label layoutX="462.0" layoutY="189.0" prefHeight="24.0" prefWidth="483.0" text="Enter youer  user detail for creating account.............." textFill="#1c369e">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="722.0" layoutY="593.0" opacity="0.61" prefHeight="24.0" prefWidth="78.0" text="Loding....">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="727.0" layoutY="627.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/loading-buffering.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

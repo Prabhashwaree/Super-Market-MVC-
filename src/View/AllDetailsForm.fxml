@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="allDetailPane" prefHeight="650.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AllDetailsFormController">
+   <children>
+      <Label layoutX="43.0" layoutY="14.0" prefHeight="56.0" prefWidth="358.0" text="All Details Report Form">
+         <font>
+            <Font name="Bell MT Bold" size="28.0" />
+         </font>
+      </Label>
+      <Separator layoutX="361.0" layoutY="45.0" prefHeight="0.0" prefWidth="394.0" />
+      <Pane layoutX="48.0" layoutY="84.0" prefHeight="206.0" prefWidth="347.0" style="-fx-background-color: #E4E4E4;" styleClass="left-side-background" stylesheets="@../CSS/StyleSheet.css">
+         <children>
+            <Label alignment="CENTER" layoutX="184.0" layoutY="58.0" prefHeight="33.0" prefWidth="154.0" text="Customer">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="184.0" layoutY="102.0" prefHeight="33.0" prefWidth="154.0" text="View Table">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="245.0" fitWidth="244.0" opacity="0.43" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../asset/156-1567989_abstract-geometric-shapes-effects-effect-designs-background-geometric.png" />
+               </image>
+            </ImageView>
+            <Button blendMode="MULTIPLY" layoutX="163.0" mnemonicParsing="false" onAction="#CustomerTvlViewOnAction" prefHeight="206.0" prefWidth="185.0" style="-fx-background-color: #EAEAEA;">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="408.0" layoutY="84.0" prefHeight="206.0" prefWidth="347.0" styleClass="left-side-background" stylesheets="@../CSS/StyleSheet.css">
+         <children>
+            <Label alignment="CENTER" layoutX="168.0" layoutY="56.0" prefHeight="33.0" prefWidth="154.0" text="Order" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="168.0" layoutY="100.0" prefHeight="33.0" prefWidth="154.0" text="Report" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Button blendMode="MULTIPLY" layoutX="174.0" mnemonicParsing="false" prefHeight="206.0" prefWidth="174.0">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Pane prefHeight="206.0" prefWidth="347.0" style="-fx-background-color: #E4E4E4;" styleClass="left-side-background" stylesheets="@../CSS/StyleSheet.css">
+               <children>
+                  <Label alignment="CENTER" layoutX="184.0" layoutY="58.0" prefHeight="33.0" prefWidth="154.0" text="Order">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="184.0" layoutY="102.0" prefHeight="33.0" prefWidth="154.0" text="View Table">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="btnSQLView" fitHeight="207.0" fitWidth="244.0" opacity="0.43" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@../asset/156-1567989_abstract-geometric-shapes-effects-effect-designs-background-geometric.png" />
+                     </image>
+                  </ImageView>
+                  <Button blendMode="MULTIPLY" layoutX="163.0" mnemonicParsing="false" onAction="#orderTblViewOnAction" prefHeight="206.0" prefWidth="185.0" style="-fx-background-color: #EAEAEA;">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="242.0" layoutY="332.0" prefHeight="206.0" prefWidth="347.0" styleClass="left-side-background" stylesheets="@../CSS/StyleSheet.css">
+         <children>
+            <Label alignment="CENTER" layoutX="174.0" layoutY="59.0" prefHeight="33.0" prefWidth="154.0" text="Item" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="174.0" layoutY="103.0" prefHeight="33.0" prefWidth="154.0" text="Report" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Button blendMode="MULTIPLY" layoutX="174.0" layoutY="1.0" mnemonicParsing="false" prefHeight="206.0" prefWidth="174.0">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Pane prefHeight="206.0" prefWidth="347.0" style="-fx-background-color: #E4E4E4;" styleClass="left-side-background" stylesheets="@../CSS/StyleSheet.css">
+               <children>
+                  <Label alignment="CENTER" layoutX="184.0" layoutY="58.0" prefHeight="33.0" prefWidth="154.0" text="Item">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="184.0" layoutY="102.0" prefHeight="33.0" prefWidth="154.0" text="View Table">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="245.0" fitWidth="244.0" opacity="0.43" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@../asset/156-1567989_abstract-geometric-shapes-effects-effect-designs-background-geometric.png" />
+                     </image>
+                  </ImageView>
+                  <Button blendMode="MULTIPLY" layoutX="163.0" mnemonicParsing="false" onAction="#ItemViewTblOnAction" prefHeight="206.0" prefWidth="185.0" style="-fx-background-color: #EAEAEA;">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

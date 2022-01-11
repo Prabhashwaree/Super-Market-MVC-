@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="enterFormPane" prefHeight="718.0" prefWidth="1127.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EnterFormController">
+   <children>
+      <ImageView fitHeight="747.0" fitWidth="977.0" layoutX="76.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/e88ac8c7797554d99aca4f429ad614d2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="586.0" fitWidth="643.0" layoutX="395.0" layoutY="81.0" opacity="0.05" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/pngwing.com.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="220.0" layoutY="462.0" prefHeight="35.0" prefWidth="151.0" text="Foget Your Password">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="142.0" layoutY="559.0" mnemonicParsing="false" onAction="#OpenCreateAccount" prefHeight="30.0" prefWidth="194.0" style="-fx-background-color: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);;" stylesheets="@../CSS/StyleSheet.css" text="Create Account">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <styleClass>
+            <String fx:value="transparent" />
+            <String fx:value="anchorpane" />
+         </styleClass>
+      </Button>
+      <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="153.0" layoutY="564.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/login_24px.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="508.0" layoutY="555.0" mnemonicParsing="false" onAction="#managementLoginButton" prefHeight="35.0" prefWidth="261.0" style="-fx-background-color: linear-gradient(to right top, #ff2ca4, #ff348a, #ff4572, #ff585d, #ff6a4b, #ff6b47, #ff6c43, #ff6d3f, #ff5b49, #ff4854, #ff3260, #ff116e);;" stylesheets="@../CSS/StyleSheet.css" text="     Management Login">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <styleClass>
+            <String fx:value="transparent" />
+            <String fx:value="anchorpane" />
+         </styleClass>
+      </Button>
+      <ImageView fitHeight="27.0" fitWidth="24.0" layoutX="529.0" layoutY="562.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/male_user_50px.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="140.0" layoutY="105.0" prefHeight="71.0" prefWidth="110.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="71.0" fitWidth="60.0" layoutX="-1.0" layoutY="-16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/pngwing.com.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="190.0" layoutY="239.0" prefHeight="234.0" prefWidth="229.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label contentDisplay="CENTER" layoutX="-5.0" layoutY="5.0" prefHeight="35.0" prefWidth="235.0" text="Hello! , Enter Your User Name &amp; Password" />
+            <TextField fx:id="txtUserName" layoutX="-26.0" layoutY="59.0" onAction="#moveToPassword" onKeyReleased="#validateKeyReleasedOnAction" prefHeight="25.0" prefWidth="277.0" promptText="User Name">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <ImageView fitHeight="27.0" fitWidth="24.0" layoutX="88.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/loading-buffering.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="224.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/Users_30px.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="216.0" layoutY="61.0" orientation="VERTICAL" prefHeight="27.0" prefWidth="6.0" />
+            <PasswordField fx:id="txtPassword" layoutX="-26.0" layoutY="117.0" onKeyReleased="#validateKeyReleasedOnAction" prefHeight="30.0" prefWidth="277.0" promptText="Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <ImageView fitHeight="27.0" fitWidth="24.0" layoutX="221.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/eye_50px.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="214.0" layoutY="118.0" orientation="VERTICAL" prefHeight="27.0" prefWidth="6.0" />
+            <JFXButton fx:id="butLogin" buttonType="RAISED" layoutX="119.0" layoutY="178.0" onAction="#loginOnAction" prefHeight="31.0" prefWidth="136.0" style="-fx-background-color: #00FFFF;" styleClass="anchorpane" stylesheets="@../CSS/StyleSheet.css" text="Cashier Login" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="lblWrongLongin" alignment="CENTER" layoutX="-55.0" layoutY="149.0" prefHeight="27.0" prefWidth="330.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Label layoutX="179.0" layoutY="122.0" prefHeight="35.0" prefWidth="121.0" text="Supermarket">
+         <font>
+            <Font name="Bell MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="221.0" layoutY="203.0" prefHeight="35.0" prefWidth="171.0" text="Login to system" textFill="#032e79">
+         <font>
+            <Font name="Bell MT" size="23.0" />
+         </font>
+      </Label>
+      <Pane layoutX="1.0" layoutY="-1.0" prefHeight="732.0" prefWidth="76.0" style="-fx-background-color: #160B46;">
+         <children>
+            <Pane layoutX="-8.0" prefHeight="732.0" prefWidth="121.0" style="-fx-background-color: #1D0E53;" />
+         </children>
+      </Pane>
+      <Pane layoutX="1021.0" layoutY="-1.0" prefHeight="731.0" prefWidth="110.0" style="-fx-background-color: #321A64;" />
+   </children>
+</AnchorPane>
